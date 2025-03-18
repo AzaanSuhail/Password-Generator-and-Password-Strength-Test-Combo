@@ -1,0 +1,189 @@
+body{
+  background-color: #0a2535;
+  color:white;
+  min-height:100vh;
+  display: flex;
+  margin:0;
+  justify-content:center;
+  align-items:center;
+  font-family:Georgia,'Times New Roman', Times, serif;
+
+}
+
+
+.container{
+  background-color:#99000038;;
+  padding:3rem;
+
+  border-radius:1rem;
+  border:2px solid white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap:1rem;
+  column-gap:3rem;
+  justify-content:center;
+  align-items:center;
+}
+
+.title{
+  margin:0;
+  text-align: center;
+}
+
+label{
+  font-weight: bold;
+}
+
+.character-amount-container{
+  display:flex;
+  align-items:center;
+}
+
+.number-input{
+  width:2.4rem;
+}
+
+.password-display{
+  background-color: white;
+  color:black;
+  padding:1rem;
+  border:2px solid black ;
+  border-radius:.5rem;
+  height:2rem;
+  width:350px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  word-break:break-all;
+}
+
+.btn{
+  grid-column:span 2;
+  background-color: transparent;
+  border:2px solid white;
+  color:white;
+  padding:.5rem 1rem;
+  font-weight: bold;
+  cursor:pointer;
+  border-radius:1rem;
+}
+
+.btn:hover{
+  background-color:#FFFFFF33;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.password-display {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.copy-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.copy-btn:hover {
+  background-color: #0056b3;
+}
+
+
+*::before, *::after, * {
+  box-sizing: border-box;
+}
+
+.div1 {
+  background-color:  hsl(155.08deg 59.27% 16.72%);
+  color: hsl(261, 88%, 90%);
+  text-align: center;
+}
+
+.strength-meter {
+  position: relative;
+  height: 2rem;
+  width: 90%;
+  border: 1.5px solid hsl(261, 88%, 57%);
+  border-radius: 1rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.strength-meter::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: calc(1% * var(--strength, 0));
+  background-color: #7ce629;
+
+  transition: width 200ms;
+}
+
+.password-input {
+  margin-top: 1rem;
+  width: 90%;
+  padding: .35rem .80rem;
+  background-color: rgba(100, 27, 27, 0.489);
+  color: white;
+  border: 1px solid hsl(261, 88%, 57%);
+  outline: none;
+  text-align: center;
+  border-radius: .3rem;
+}
+
+.password-input:focus {
+  border-color: hsl(261, 88%, 70%);
+}
+
+.reasons > * {
+  margin-top: .5rem;
+  color: hsl(261, 88%, 80%);
+} 
+
+  .main-cont{
+    display: flex;
+    gap:4.5rem;
+    justify-content: space-between;
+    margin:2rem;
+    
+  }
+
+  .div1{
+    border:2px solid white;
+    border-radius: 10px;
+    padding:2%;
+  }
+ 
+
+
+  @media screen and (max-width: 768px){
+    .main-cont{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap:1rem;
+      margin: auto;
+    }
+  }
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+<body>
+
+    <div class="main-cont">
+        <div class="div1" id="div1">
+            <h1>Password Strength Test</h1>
+    
+            <div class="strength-meter" id="strength-meter"></div>
+          
+            <input class="password-input" id="password-input" value="Enter a password" type="text"  aria-laballedby="password" onfocus="clearText(this)">
+          
+            <div id="reasons" class="reasons"></div>
+        </div>
+    
+    
+        <div class="div2" id="div2">
+            <div class="container">
+                <h1 class="title">Password Generator</h1>
+                <div class="password-container">
+                    <input type="text" class="password-display" id="passwordDisplay" readonly>
+                    <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+                </div>
+                
+            
+                <form action="" class="form" id="password-generator-form">
+                    <label for="Number of Characters">Number of Characters</label>
+            
+                    <div class="character-amount-container">
+                        <input type="range"  value = "10" min="1" max="50" id="characterAmountRange" >
+                        <input class="number-input" type="number" value="10" min="1" max="50" id="characterAmountNumber" >
+                    </div>
+            
+                    <label for="includeUppercase">Include Uppercase</label>
+                    <input type="checkbox" id="includeUppercase" >
+                    
+                    <label for="includeNumbers">Include Numbers</label>
+                    <input type="checkbox" id="includeNumbersElements" >
+            
+                    <label for="includeSymbols">Include Symbols</label>
+                    <input type="checkbox" id="includeSymbols" >
+            
+                    <button  class="btn" type="submit">Generate Password</button>
+                    
+                </form>
+               </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
