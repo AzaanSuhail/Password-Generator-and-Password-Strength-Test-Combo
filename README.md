@@ -20,7 +20,7 @@ A combined **Password Generator & Strength Tester** built using  **HTML, CSS, an
 
 ---
 
-## 📸 [Live Demo]()
+## 📸 [Live Demo](https://password-generator-and-password-strength-test-combo.vercel.app/)
 
 ![1742280399471](image/README/1742280399471.png)
 
@@ -65,11 +65,11 @@ A combined **Password Generator & Strength Tester** built using  **HTML, CSS, an
 
 1. Clone the repository:
    ```sh
-   git clone 
+   git clone https://github.com/AzaanSuhail/Password-Generator-and-Password-Strength-Test-Combo.git
    ```
 2. Navigate to the project folder:
    ```sh
-   cd 
+   cd Password-Generator-and-Password-Strength-Test-Combo
    ```
 3. Open `index.html` in your browser.
 
